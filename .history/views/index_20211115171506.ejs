@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+    
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="skeleton.css" />
+</head>
+<body>
+  
+      <h1>Budget</h1>
+
+      <table class="u-full-width">
+
+      <tbody>
+
+
+
+  <tr>
+              
+              <td>  <%= budget[0].date %></td>
+              <td>  <a href="/budget/<%=0%>"> <%= budget[0].name %></a> </td>
+              <td>  <%= budget[0].amount %>  </td>
+         
+       </tr>
+
+       <tr>
+          
+          <td>  <%= budget[1].date %></td>
+          <td>  <a href="/budget/<%=1%>"> <%= budget[1].name %></a> </td>
+          <td>  <%= budget[1].amount %>  </td>
+      
+     
+   </tr>  
+  
+   <tr>
+      
+      <td>  <%= budget[2].date %></td>
+      <td>  <a href="/budget/<%=2%>"> <%= budget[2].name %></a> </td>
+      <td>  <%= budget[2].amount %>  </td>
+   
+ 
+</tr>  
+  
+  <tr>
+    
+    <td>  <%= budget[3].date %></td>
+    <td>  <a href="/budget/<%=3%>"> <%= budget[3].name %></a> </td>
+    <td>  <%= budget[3].amount %>  </td>
+
+</tr> 
+
+
+  
+  <tr>
+    
+    <td>  <%= budget[4].date %></td>
+    <td>  <a href="/budget/<%=4%>"> <%= budget[4].name %></a> </td>
+    <td>  <%= budget[4].amount %>  </td>
+
+</tr>    
+  
+  <tr>
+    
+    <td>  <%= budget[5].date %></td>
+    <td>  <a href="/budget/<%=5%>"> <%= budget[5].name %></a> </td>
+    <td>  <%= budget[5].amount %>  </td>
+
+</tr> 
+
+  
+  <tr>
+    
+    <td>  <%= budget[6].date %></td>
+    <td>  <a href="/budget/<%=6%>"> <%= budget[6].name %></a> </td>
+    <td>  <%= budget[6].amount %>  </td>
+
+</tr>
+
+<tr>
+    
+    <td>  <%= budget[7].date %></td>
+    <td>  <a href="/budget/<%=7%>"> <%= budget[7].name %></a> </td>
+    <td>  <%= budget[7].amount %>  </td>
+
+
+</tr>  
+
+<tr>
+    
+    <td>  <%= budget[8].date %></td>
+    <td>  <a href="/budget/<%=8%>"> <%= budget[8].name %></a> </td>
+    <td>  <%= budget[8].amount %>  </td>
+
+</tr>  
+
+<tr>
+    
+    <td>  <%= budget[9].date %></td>
+    <td>  <a href="/budget/<%=9%>"> <%= budget[9].name %></a> </td>
+    <td>  <%= budget[9].amount %>  </td>
+
+</tr>
+
+
+
+</tbody>
+</table>
+
+
+<% for(let i = 0; i < budget.length; i++) { %>
+  <p>
+      <a href="/budget/<%= budget[i].id %>">
+          <%= budget[i].name %>
+      </a>
+  </p>
+<% } %>
+    
+   
+</body>
+</html>

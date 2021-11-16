@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+    <link rel="stylesheet" href="public/normalize.css" />
+    <link rel="stylesheet" href="public/skeleton.css" />
+</head>
+<body>
+  /public/css/normalize.css
+    <main>
+        <div>
+          <h1>Budget()</h1>
+          <ul>
+            <% for(let i = 0; i < budget.length; i++) { %>
+              <li><a href="/budget/<%=i%>"><%= budget[i].date %></a></li>
+            <% } %>
+          </ul>
+        </div>
+        <div>
+          <h1>fooD()</h1>
+          <ul>
+           
+          </ul>
+        </div>
+      </main>
+    
+</body>
+</html>

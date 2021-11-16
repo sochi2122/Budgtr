@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+    <link rel="stylesheet" href="/public/normalize.css" />
+    <link rel="stylesheet" href="/public/skeleton.css" />
+</head>
+<body>
+    <main>
+      <h1>Budget</h1>
+    <span>
+ <table>
+
+  <br>
+        <tr>
+<br>
+          <td>
+            <% for(let i = 0; i < budget.length; i++) { %>
+              <a href="/budget/<%=i%>">
+                <%= budget[i].date %>
+                <%= budget[i].name %>
+                <%= budget[i].amount %>
+            <% } %>
+         
+    
+            </td>
+        
+          <td> 
+            <% for(let i = 0; i < budget.length; i++) { %>
+              <a href="/budget/<%=i%>"><%= budget[i].name %></a>
+            <% } %>
+          </td>
+
+            <td> <% for(let i = 0; i < budget.length; i++) { %>
+             <a href="/budget/<%=i%>"><%= budget[i].amount %></a>
+            <% } %></td>
+      </tr>
+<br>
+      </table>
+
+    </span>
+    <br>
+
+      </main>
+    
+
+     
+
+    
+</body>
+</html>
