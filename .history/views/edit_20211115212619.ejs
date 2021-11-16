@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr Edit</title>
+    
+
+    
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+</head>
+<body>
+  <main>
+
+    <h1>Edit Page</h1>
+    <form action="/budget/<%= index %>?_method=PUT" method="POST">
+        <!--  NOTE: the form is pre-populated with values for the server-->
+        Name: <input type="text" name="name" value="<%=budget.name%>" /><br />
+        Color: <input type="text" name="color" value="<%=fruit.color%>" /><br />
+        Is Ready To Eat: <input type="checkbox" name="readyToEat" <% if(fruit.readyToEat===true){ %> checked <% } %> />
+            <br />
+   
+            <form action="/budget" method="POST">
+                Name: <input type="text" name="name" /><br />
+                amount: <input type="number" name="amount" /><br />
+        
+                date: <input type="date" name="date" /><br />
+        
+                from: <input type="text" name="from" /><br />
+                Tags: <input type="text" name="Tags" /><br />
+               
+        
+                <input type="submit" value="add" />
+        
+              </form>
+   
+   
+   
+   
+   
+        </form>
+</body>
+
+</html>

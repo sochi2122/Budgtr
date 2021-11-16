@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr</title>
+    
+
+    
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+</head>
+<body>
+  <main>
+
+
+      <h1>Budget</h1>
+
+   
+
+
+
+<table class="u-full-width">
+
+  <tbody>
+
+<% for(let i = 0; i < budget.length; i++) { %>
+
+  <tr>
+    
+    <td>  <%= budget[i].date %></td>
+    <td>  <a href="/budget/<%=i%>"> <%= budget[i].name %></a> </td>
+    <td> $ <%= budget[i].amount %>  </td>
+
+</tr>
+
+  
+      
+<% } %>
+    
+
+</tbody>
+</table>
+
+
+<form action="/fruits/<%= i %>?_method=DELETE" method="POST">
+  <input type="submit" value="DELETE" />
+</form>
+<% } %>
+
+
+</main>
+   
+</body>
+
+<footer>
+  <button><a href="/budget" type="btn" class="back-btn">go back</a></button>
+  <button><a href="/budget/new" type="btn" class="new-btn">add expense or income</a></button>
+  <button><a href="/budget/edit" type="btn" class="edit-btn">edit expense or income</a></button>
+</footer>
+</html>

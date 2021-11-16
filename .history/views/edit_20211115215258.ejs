@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr Edit</title>
+    
+
+    
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+</head>
+<body>
+  <main>
+   
+    <h1>Edit Page</h1>
+
+    </main>div
+
+    <form action="/fruits/<%= index %>?_method=PUT" method="POST">
+        <!--  NOTE: the form is pre-populated with values for the server-->
+        Name: <input type="text" name="name" value="<%=fruit.name%>" /><br />
+        Color: <input type="text" name="color" value="<%=fruit.color%>" /><br />
+        Is Ready To Eat: <input type="checkbox" name="readyToEat" <% if(fruit.readyToEat===true){ %> checked <% } %> />
+            <br />
+            <input type="submit" name="" value="Submit Changes" />
+    </form>
+   
+   
+   
+   ]
+    </div>
+
+
+</main>
+</body>
+<footer> 
+<button><a href="/budget" type="btn" class="back-btn">go back</a></button>
+<button><a href="/budget/new" type="btn" class="new-btn">add expense or income</a></button>
+<button><a href="/budget/edit" type="btn" class="edit-btn">edit expense or income</a></button>
+
+
+
+</footer>
+</html>

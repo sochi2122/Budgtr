@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="normalize.css" />
+<link rel="stylesheet" href="skeleton.css" />
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+Skip to content
+Search or jump to…
+Pulls
+Issues
+Marketplace
+Explore
+ 
+@sochi2122 
+sochi2122
+/
+fruits-master
+Public
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+More
+fruits-master/views/new.ejs
+@sochi2122
+sochi2122 initial commit
+Latest commit 7761465 5 days ago
+ History
+ 1 contributor
+22 lines (18 sloc)  565 Bytes
+   
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create a new Fruit</title>
+  </head>
+  <body>
+    <h1>New Fruit page</h1>
+    <!--  NOTE: action will be the route, method will be the HTTP verb-->
+    <form action="/fruits" method="POST">
+      Name: <input type="text" name="name" /><br />
+      Color: <input type="text" name="color" /><br />
+      Is Ready To Eat: <input type="checkbox" name="readyToEat" /><br />
+      <input type="submit" value="Create Fruit" />
+    </form>
+
+
+
