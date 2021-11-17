@@ -57,19 +57,24 @@ app.post('/budget', (req, res) => {
   budget.push(req.body);
 
   res.redirect('/budget') 
- 
+  let accountArr = []
+  let totalBal = i.getElementById('div').innerHTML;
+  for (let i = 0; i < budget.length; i++) {
+    (accountArr.push(Number(budget.amount))
+    totalBal += (Number(budget.amount))
+    console.log(totalBal)
+return totalBal
 
+  }
+
+console.log(totalBal)
 })
 
 app.get('/budget/:indexOfBudgetArray', (req, res) => {
- 
-
-    res.render('show.ejs', {
-      foundBudget: budget[req.params.indexOfBudgetArray]}
-      ),
-      res.send('index.ejs',`${req.params.totalBal}<a href="/${req.params.totalBal}">`)
-
- 
+  res.render('show.ejs', {
+    
+    foundBudget: budget[req.params.indexOfBudgetArray]
+  })
 });
 
 

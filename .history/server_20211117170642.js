@@ -63,12 +63,15 @@ app.post('/budget', (req, res) => {
 
 app.get('/budget/:indexOfBudgetArray', (req, res) => {
  
-
-    res.render('show.ejs', {
-      foundBudget: budget[req.params.indexOfBudgetArray]}
-      ),
-      res.send('index.ejs',`${req.params.totalBal}<a href="/${req.params.totalBal}">`)
-
+    let accountArr = []
+    let totalBal = accountArr + i
+    for (let i = 0; i < budget.length; i++) {
+      accountArr.push(Number(budget.amount))
+      totalBal += (Number(budget.amount))
+      console.log(totalBal)
+      res.send(`${req.params.totalBal}<a href="/${req.params.totalBal}">`)
+    }
+    
  
 });
 

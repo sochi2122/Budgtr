@@ -62,14 +62,12 @@ app.post('/budget', (req, res) => {
 })
 
 app.get('/budget/:indexOfBudgetArray', (req, res) => {
- 
-
-    res.render('show.ejs', {
-      foundBudget: budget[req.params.indexOfBudgetArray]}
-      ),
-      res.send('index.ejs',`${req.params.totalBal}<a href="/${req.params.totalBal}">`)
-
- 
+  res.render('show.ejs', {
+    
+    foundBudget: budget[req.params.indexOfBudgetArray]
+    
+    
+  })
 });
 
 

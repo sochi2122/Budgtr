@@ -4,12 +4,23 @@
     <button><a href="/budget/new" type="btn" class="new-btn">add expense or income</a></button>
     <button><a href="/budget/edit" type="btn" class="edit-btn">edit expense or income</a></button>
  <br>
+<script>
 
 
-<div>
+const budget = 
 
 
 
- </div>
+let accountArr = []
+let totalBal = accountArr + i
+for (let i = 0; i < budget.length; i++) {
+  accountArr.push(Number(budget.amount))
+  totalBal += (Number(budget.amount))
+  console.log(totalBal)
+}
+
+res.send(`${totalBal}`)
+
+</script>
 
   </header>

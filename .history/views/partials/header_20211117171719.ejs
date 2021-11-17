@@ -6,10 +6,25 @@
  <br>
 
 
-<div>
+
+
+<% 
+
+for (let i=0; i<budget.Number.length; i++) { %>
+
+
+const budget = 
 
 
 
- </div>
+for (let i = 0; i < budget.length; i++) {
+  accountArr.push(Number(budget.amount))
+  totalBal += (Number(budget.amount))
+  console.log(totalBal)
+}
+
+res.send(`${totalBal}`)
+
+</script>
 
   </header>
