@@ -6,15 +6,14 @@ const budget = require("../models/budget");
     let accountArr = []
     function (totalBal{
     for (let i = 0; i < budget.length; i++) {
-        then(parse)
+        then(parseJSON)
         .then(lineItem)
       accountArr.push(Number(budget.amount))
       totalBal += (Number(budget.amount))
-    
-    })
-    function parse(sep) 
-        return speechSynthesis();
-      }
+      
+      function parseJSON(sep) 
+        return sep.json();
+      }}})
 
 
 

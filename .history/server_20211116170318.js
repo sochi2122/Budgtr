@@ -9,7 +9,7 @@ const port = 3000;
 //              DATABASE
 // =======================================
 const budget = require('./models/budget.js');
-var bankAccount = 
+var bank
 
 app.use(express.static('public')); 
 

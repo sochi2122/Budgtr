@@ -11,8 +11,7 @@ const budget = require("../models/budget");
       accountArr.push(Number(budget.amount))
       totalBal += (Number(budget.amount))
     
-    })
-    function parse(sep) 
+    }function parse(sep) 
         return speechSynthesis();
       }
 

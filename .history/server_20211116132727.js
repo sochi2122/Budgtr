@@ -9,7 +9,7 @@ const port = 3000;
 //              DATABASE
 // =======================================
 const budget = require('./models/budget.js');
-var bankAccount = 
+
 
 app.use(express.static('public')); 
 
@@ -64,10 +64,10 @@ app.post('/budget', (req, res) => {
     totalBal += (Number(budget.amount))
 return totalBal
 
-
+res.send({'totalBal'})
 
   }
-console.log(totalBal)
+console.log(to)
 })
 
 app.get('/budget/:indexOfBudgetArray', (req, res) => {
@@ -87,7 +87,7 @@ app.get('/budget/:indexOfBudgetArray/edit', (req,res) => {
 
 // Delete
 app.delete('/budget/:indexOfBudgetArray', (req, res) => {
-  budget.splice(req.params.indexOfBudgetArray.i)
+  budget.splice(req.params.indexOfBudgetArray)
   res.redirect('/budget')
 })
 
