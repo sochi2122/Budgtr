@@ -102,7 +102,7 @@ app.get('/budget/:indexOfBudgetArray/edit', (req,res) => {
 app.put('/budget/:indexOfBudgetArray', (req,res) => {
   console.log('put route', req.body)
   budget[req.params.indexOfBudgetArray] = req.body
-  res.redirect('/budget', { budget, sum})
+  res.redirect('/budget')
 })
 
 

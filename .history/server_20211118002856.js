@@ -70,7 +70,7 @@ app.get('/budget/:indexOfBudgetArray', (req, res) => {
     sum += budget[i].amount;
 }
   
-    res.render('show.ejs', {
+    res.render('show.ejs', { budget, sum}{
       foundBudget: budget[req.params.indexOfBudgetArray]}
       ),
       res.send('index.ejs',`${req.params.sum}<a href="/${req.params.sum}">`)
