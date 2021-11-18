@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgtr Edit</title>
+    
+
+    
+
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/skeleton.css" />
+</head>
+
+
+<body>
+
+    <%- include('./partials/header.ejs')%>
+
+
+
+    <div class="container">
+     
+        <main class="show-main">
+  
+
+    <form action="/budget/<%= budget[i] %>?_method=PUT" method="POST">
+        <!--  NOTE: the form is pre-populated with values for the server-->
+        
+
+        <input type="submit" name="" value="Submit Changes" />
+
+        
+
+        
+        <br />
+            <input type="submit" name="" value="Submit Changes" />
+    </form>
+   
+
+
+</main>
+     
+</div>
+</body>
+
+</html>
